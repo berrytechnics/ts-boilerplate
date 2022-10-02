@@ -1,4 +1,10 @@
 {
+    "WARNING": [
+        "THIS FILE SHOULD ONLY CONTAIN",
+        "PUBLICLY AVAILABLE INFORMATION!",
+        "ALL PRIVATE VARIABLES SHOULD BE",
+                "IN THE PROCESS ENV!"
+    ],
     "brandname":"Fone Phixers",
     "address":"123 s main st.",
     "email":"support@fonephixers.com",
@@ -9,7 +15,7 @@
             "url":"http://fb.com/fonephixers"
         }
     ],
-    "services":[
+    "keywords":[
         "iPhone repair",
         "Game Console repair",
         "PC repair",
