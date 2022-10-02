@@ -1,0 +1,27 @@
+{
+    "brandname":"Fone Phixers",
+    "address":"123 s main st.",
+    "email":"support@fonephixers.com",
+    "phone":"918.000.0000",
+    "social":[
+        {
+            "name":"facebook",
+            "url":"http://fb.com/fonephixers"
+        }
+    ],
+    "services":[
+        "iPhone repair",
+        "Game Console repair",
+        "PC repair",
+        "Phone Sales",
+        "iPhone Accessories"
+    ],
+    "locations":[
+        {
+            "name":"71st",
+            "address":"123 e. 1st",
+            "phone":"918.000.0000",
+            "review-link":""
+        }
+    ]
+}

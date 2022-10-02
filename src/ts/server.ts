@@ -8,12 +8,18 @@ import cookieParser from "cookie-parser";
 import compression from "compression";
 import path from "path";
 import ejs from "ejs";
-import User from './models/user.js'
+import User from './models/user.js';
 import routes from "./routes.js";
 import passport from "passport";
 import { fileURLToPath } from "url";
 const fileName = fileURLToPath(import.meta.url);
 const dirName = path.dirname(fileName);
+const sessionOpts = {
+	secret: "flyingpeanut970",
+	resave: false,
+	saveUninitialized: true,
+	cookie: { maxAge: 60 * 60 * 1000 },
+}
 const app = express();
 app.use(express.static(dirName + '/public'));
 app.set("view engine", ejs.name);
@@ -24,12 +30,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(dirName, "public")));
 app.use(cookieParser("pdinctulok18"));
-const sessionOpts = {
-	secret: "flyingpeanut970",
-	resave: false,
-	saveUninitialized: true,
-	cookie: { maxAge: 60 * 60 * 1000 },
-}
 app.use(session(sessionOpts));
 app.use(flash());
 app.use(passport.initialize());
